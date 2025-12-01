@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Django makemigrations and migrate for certificates image",
+			"type": "shell",
+			"command": "E:/pc/speedy-transfer-main/.venv/Scripts/python.exe",
+			"args": [
+				"manage.py",
+				"makemigrations",
+				"core"
+			],
+			"group": "build"
+		},
+		{
+			"label": "Django migrate for certificates image",
+			"type": "shell",
+			"command": "E:/pc/speedy-transfer-main/.venv/Scripts/python.exe",
+			"args": [
+				"manage.py",
+				"migrate",
+				"core"
+			],
+			"group": "build"
+		}
+	]
+}
